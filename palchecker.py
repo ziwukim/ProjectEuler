@@ -1,12 +1,13 @@
 from Deque import *
 
-def palChecker(self, num):
+def palchecker(num):
 	string = str(num)
-	for i in len(string):
-		d.addFront(string[i])
+	d = Deque()
+	for i in string:
+		d.addFront(i)
 
 	flag = True
-	while d.size() >=1 and flag == True:
+	while d.size() > 1 and flag:
 		front = d.removeFront()
 		rear = d.removeRear()
 		if front != rear:
